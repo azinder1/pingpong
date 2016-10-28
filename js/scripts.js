@@ -34,6 +34,6 @@ $(document).ready(function(){
     event.preventDefault();
     var inputNumber = parseInt($("input#number").val());
     var pingPongConverter = pingPong(inputNumber);
-    $("ul").text(loopRepository);
+    $("#output ul").append(loopRepository);
   });
 });
