@@ -3,14 +3,17 @@ var pingPong = function (input) {
     alert("Please put in a number");
   }
   else {
-    if (input % 3 === 0 || input % 5 !== 0) {
+    if (input % 3 === 0 && input % 5 !== 0) {
       alert("ping");
     }
-    else if (input % 3 !== 0 || input % 5 === 0) {
+    else if (input % 3 !== 0 & input % 5 === 0) {
       alert("pong");
     }
+    else if (input % 3 === 0 && input % 5 === 0) {
+      alert("ping pong");
+    }
     else {
-      alert("this is not a multiple of 3")
+      alert("this is not a multiple of 3 or 5")
     }
   }
 };
