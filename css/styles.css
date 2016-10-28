@@ -12,9 +12,11 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .header h1{
   font-size: 50px;
 }
+
  .submit-header{
    color:white;
    margin-top: 40px
@@ -27,7 +29,9 @@ ul {
 .ping-pong {
   font-size: 20px;
   color: red;
+  text-shadow: 2px 2px blue;
 }
+
 #output {
   overflow: scroll;
   height: 300px;
