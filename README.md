@@ -10,7 +10,7 @@ _Tells the user whether a submitted number is a multiples of 3, 5 or 3 and 5 thr
 
 ## Setup/Installation Requirements
 
-* _https://azinder1.github.io/trackSuggester/_
+* _https://azinder1.github.io/pingpong/_
 
 ## Known Bugs
 
