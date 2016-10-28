@@ -3,22 +3,21 @@ var loopRepository = "";
 var pingPong = function (input) {
   var counter = 1;
 
-  if ( isNaN(input) === true) {
-    alert("Please put in a number");
+  if (input <= 0 || isNaN(input) === true) {
+    alert("Please put in a number greater than 0");
   }
   else {
-    //debugger
     while (counter <= input) {
       if (counter % 3 === 0 && counter % 5 !== 0) {
-        loopRepository = loopRepository.concat("<li> ping! </li>");
+        loopRepository = loopRepository.concat("<li> Ping! </li>");
         counter += 1;
       }
       else if (counter % 3 !== 0 & counter % 5 === 0) {
-        loopRepository = loopRepository.concat("<li> pong! </li>");
+        loopRepository = loopRepository.concat("<li> Pong! </li>");
         counter += 1;
       }
       else if (counter % 3 === 0 && counter % 5 === 0) {
-        loopRepository =loopRepository.concat("<li> pingpong! </li>");
+        loopRepository =loopRepository.concat("<li class=\'ping-pong\'> Ping Pong! </li>");
         counter += 1;
       }
       else {

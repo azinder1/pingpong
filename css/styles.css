@@ -1,0 +1,36 @@
+body {
+  font-family: '8BITWONDERNominal';
+  font-weight: normal;
+  font-style: normal;
+  background-color: blue;
+}
+
+.header {
+  background-color: red;
+  text-align: center;
+  text-shadow: 4px 4px blue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.header h1{
+  font-size: 50px;
+}
+ .submit-header{
+   color:white;
+   margin-top: 40px
+ }
+
+ul {
+  list-style-type: none;
+}
+
+.ping-pong {
+  font-size: 20px;
+  color: red;
+}
+#output {
+  overflow: scroll;
+  height: 300px;
+  margin-top:40px;
+  background-color: white;
+}
