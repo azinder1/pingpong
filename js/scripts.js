@@ -1,11 +1,14 @@
 var pingPong = function (input) {
-  var counter = 1;
-  var toLoopToString = "";
   if ( isNaN(input) === true) {
     alert("Please put in a number");
   }
   else {
-    alert("This is a number")
+    if (input % 3 === 0 || input % 5 !== 0) {
+      alert("ping");
+    }
+    else {
+      alert("this is not a multiple of 3")
+    }
   }
 };
 
@@ -16,4 +19,4 @@ $(document).ready(function(){
     var pingPongConverter = pingPong(inputNumber);
     console.log(inputNumber)
   });
-})
+});
