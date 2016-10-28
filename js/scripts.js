@@ -1,8 +1,6 @@
-var loopRepository = "";
-
 var pingPong = function (input) {
   var counter = 1;
-
+  var loopRepository = "";
   if (input <= 0 || isNaN(input) === true) {
     alert("Please put in a number greater than 0");
   }
@@ -26,6 +24,7 @@ var pingPong = function (input) {
       }
     }
   }
+  return loopRepository;
 };
 
 $(document).ready(function(){
@@ -33,6 +32,7 @@ $(document).ready(function(){
     event.preventDefault();
     var inputNumber = parseInt($("input#number").val());
     var pingPongConverter = pingPong(inputNumber);
-    $("#output ul").append(loopRepository);
+    $("#output ul").text("");
+    $("#output ul").append(pingPongConverter);
   });
 });
