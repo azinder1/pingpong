@@ -6,6 +6,9 @@ var pingPong = function (input) {
     if (input % 3 === 0 || input % 5 !== 0) {
       alert("ping");
     }
+    else if (input % 3 !== 0 || input % 5 === 0) {
+      alert("pong");
+    }
     else {
       alert("this is not a multiple of 3")
     }
